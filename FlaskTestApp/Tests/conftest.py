@@ -42,7 +42,7 @@ def stop_docker_container(ssh, container_id):
     cmd_stop = f"docker stop {container_id}"
     cmd_remove = f"docker rm {container_id}"
     # Execute the 'docker stop' command
-    stdin_stop, stdout_stop, stderr_stop = ssh.exec_command(cmd_stop)
+    stdin_stop, stdout_stop, stderr_stop = ssh.exec_command(cmd_stop )
     # Wait for the command to finish
     stdout_stop.channel.recv_exit_status()
 
