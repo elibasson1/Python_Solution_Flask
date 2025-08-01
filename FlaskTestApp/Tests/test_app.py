@@ -72,4 +72,4 @@ class Test_application(URLHandler):
         assert response.status_code == 404
 
     def test_push(self):
-        print("test push_1")
+        print("test push_3")
