@@ -70,3 +70,6 @@ class Test_application(URLHandler):
         response = self.restore_request(url_invalid_endpoint)
         self.logger.info("Response status code:" + str(response.status_code))
         assert response.status_code == 404
+
+    def test_push(self):
+        print("test push")
